@@ -1,0 +1,12 @@
+﻿Hosszú Katinka;Magyarország
+Adam Peaty;Anglia
+Anastasia Gorbenko;Izrael
+Paul Biedermann;Németország
+Florent Manaudou;Franciaország
+Jang Myong-Hyok;Észak Kórea
+Cseh László;Magyarország
+Duncan Scott;Anglia
+Yakov Toumarkin;Izrael
+Franziska van Almsick;Németország
+Mélanie Henique;Franciaország
+Kim Kuk-hyang;Észak Kórea
