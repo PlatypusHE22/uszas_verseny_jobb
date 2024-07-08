@@ -83,6 +83,7 @@
             // 
             // fileMenuMentes
             // 
+            this.fileMenuMentes.Enabled = false;
             this.fileMenuMentes.Name = "fileMenuMentes";
             this.fileMenuMentes.Size = new System.Drawing.Size(152, 22);
             this.fileMenuMentes.Text = "Mentés";
@@ -105,6 +106,7 @@
             this.menuVerseny.Name = "menuVerseny";
             this.menuVerseny.Size = new System.Drawing.Size(59, 20);
             this.menuVerseny.Text = "Verseny";
+            this.menuVerseny.Click += new System.EventHandler(this.menuVerseny_Click);
             // 
             // menuEredmeny
             // 
@@ -142,7 +144,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileMenuMentes;
         private System.Windows.Forms.ToolStripMenuItem fileMenuKilepes;
 
-        private System.Windows.Forms.ToolStripMenuItem menuEredmeny;
+        public System.Windows.Forms.ToolStripMenuItem menuEredmeny;
         private System.Windows.Forms.ToolStripMenuItem menuVerseny;
 
         private System.Windows.Forms.ToolStripMenuItem menuNevjegy;

@@ -11,8 +11,9 @@ using System.Windows.Forms;
 
 namespace JobbUszoverseny {
     public partial class Form1 : Form {
-        private List<Versenyzo> versenyzok = new List<Versenyzo>();
-
+        public List<Versenyzo> versenyzok = new List<Versenyzo>();
+        public static int VersenyTav;
+        public static string VersenyFajta;
 
         public Form1()
         {
@@ -33,11 +34,19 @@ namespace JobbUszoverseny {
                     versenyzok.Add(new Versenyzo(line[0], line[1]));
                 }
             }
+
+            menuVerseny.Enabled = true;
         }
 
         private void fileMenuKilepes_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void menuVerseny_Click(object sender, EventArgs e)
+        {
+            VersenyForm form = new VersenyForm(versenyzok, this);
+            form.ShowDialog();
         }
     }
 }
