@@ -1,5 +1,5 @@
 ﻿namespace JobbUszoverseny {
-    partial class Form1 {
+    partial class MainForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -27,7 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.menuFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,31 +72,31 @@
             // fileMenuMegnyit
             // 
             this.fileMenuMegnyit.Name = "fileMenuMegnyit";
-            this.fileMenuMegnyit.Size = new System.Drawing.Size(152, 22);
+            this.fileMenuMegnyit.Size = new System.Drawing.Size(129, 22);
             this.fileMenuMegnyit.Text = "Megnyitás";
             this.fileMenuMegnyit.Click += new System.EventHandler(this.fileMenuMegnyit_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(126, 6);
             // 
             // fileMenuMentes
             // 
             this.fileMenuMentes.Enabled = false;
             this.fileMenuMentes.Name = "fileMenuMentes";
-            this.fileMenuMentes.Size = new System.Drawing.Size(152, 22);
+            this.fileMenuMentes.Size = new System.Drawing.Size(129, 22);
             this.fileMenuMentes.Text = "Mentés";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(126, 6);
             // 
             // fileMenuKilepes
             // 
             this.fileMenuKilepes.Name = "fileMenuKilepes";
-            this.fileMenuKilepes.Size = new System.Drawing.Size(152, 22);
+            this.fileMenuKilepes.Size = new System.Drawing.Size(129, 22);
             this.fileMenuKilepes.Text = "Kilépés";
             this.fileMenuKilepes.Click += new System.EventHandler(this.fileMenuKilepes_Click);
             // 
@@ -114,6 +114,7 @@
             this.menuEredmeny.Name = "menuEredmeny";
             this.menuEredmeny.Size = new System.Drawing.Size(72, 20);
             this.menuEredmeny.Text = "Eredmény";
+            this.menuEredmeny.Click += new System.EventHandler(this.menuEredmeny_Click);
             // 
             // menuNevjegy
             // 
@@ -121,7 +122,7 @@
             this.menuNevjegy.Size = new System.Drawing.Size(62, 20);
             this.menuNevjegy.Text = "Névjegy";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menu.ResumeLayout(false);

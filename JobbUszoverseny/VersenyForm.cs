@@ -6,9 +6,9 @@ namespace JobbUszoverseny {
     public partial class VersenyForm : Form {
         private List<Versenyzo> versenyzok;
         private int index = 0;
-        private Form1 form;
+        private MainForm form;
 
-        public VersenyForm(List<Versenyzo> versenyzok, Form1 form)
+        public VersenyForm(List<Versenyzo> versenyzok, MainForm form)
         {
             this.versenyzok = versenyzok;
             InitializeComponent();
@@ -17,7 +17,6 @@ namespace JobbUszoverseny {
             mtbEredmeny.Clear();
 
             LoadVersenyzo(0);
-            index++;
         }
 
         void LoadVersenyzo(int i)
@@ -38,6 +37,7 @@ namespace JobbUszoverseny {
             // Megadott adatok elemntése
             string[] t = mtbEredmeny.Text.Split(':');
             versenyzok[index].Ido = new TimeSpan(0, 0, int.Parse(t[0]), int.Parse(t[1]), int.Parse(t[2]));
+            index++;
             // Következő versenyző betöltése
             if (index >= versenyzok.Count)
             {
@@ -50,14 +50,13 @@ namespace JobbUszoverseny {
             else
                 LoadVersenyzo(index);
 
-            index++;
         }
 
 
         private void btnVerseny_Click(object sender, EventArgs e)
         {
-            Form1.VersenyTav = int.Parse(numTav.Text);
-            Form1.VersenyFajta = comboFajta.SelectedItem.ToString();
+            form.versenyTav = int.Parse(numTav.Text);
+            form.versenyFajta = comboFajta.SelectedItem.ToString();
 
             btnVerseny.Enabled = false;
             numTav.Enabled = false;

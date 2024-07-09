@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JobbUszoverseny {
-    public partial class Form1 : Form {
+    public partial class MainForm : Form {
         public List<Versenyzo> versenyzok = new List<Versenyzo>();
-        public static int VersenyTav;
-        public static string VersenyFajta;
+        public int versenyTav;
+        public string versenyFajta;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -46,6 +46,12 @@ namespace JobbUszoverseny {
         private void menuVerseny_Click(object sender, EventArgs e)
         {
             VersenyForm form = new VersenyForm(versenyzok, this);
+            form.ShowDialog();
+        }
+
+        private void menuEredmeny_Click(object sender, EventArgs e)
+        {
+            EredmenyForm form = new EredmenyForm(this);
             form.ShowDialog();
         }
     }
